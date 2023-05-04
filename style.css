@@ -410,7 +410,6 @@ header {
   margin: 0 auto;
   border: 2px solid red;
   min-height: calc(100vh - 4rem);
-  background: red;
 }
 
 /* page footer */
