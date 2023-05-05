@@ -141,7 +141,6 @@ header {
 }
 .content h1 {
   font-size: 5rem;
-
   letter-spacing: 2px;
 }
 .content span {
@@ -186,8 +185,17 @@ header {
   display: block;
   object-fit: cover;
 }
+@media screen and (min-width: 576px) {
+  .content h1 {
+    font-size: 6rem;
+    letter-spacing: 2px;
+  }
+  .user-img {
+    width: 60%;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .page {
     grid-template-columns: 1fr 1fr;
   }
