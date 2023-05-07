@@ -116,8 +116,7 @@ u {
 .content h1 {
   font-size: 4rem;
   letter-spacing: 2px;
-  color: #fff;
-  text-shadow: 0px 0px 10px #222;
+  color: #222;
 }
 .content p {
   text-transform: capitalize;
@@ -156,22 +155,20 @@ u {
 
 @media screen and (min-width: 576px) {
   .content {
-    top: 10rem;
-    /* border: 1px solid red; */
+    top: 8rem;
+    padding-top: 4rem;
   }
   .content h1 {
-    font-size: 8rem;
-    color: #fff;
-    text-shadow: 0px 0px 10px #222;
+    font-size: 5rem;
   }
   .content p {
-    font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    text-shadow: 0px 0px 10px #fff;
+  }
+  .image-container {
+    padding-top: 4rem;
   }
   .image-container .user-img {
-    margin-top: 10rem;
-    width: 30%;
+    width: 40%;
   }
 }
 @media screen and (min-width: 992px) {
