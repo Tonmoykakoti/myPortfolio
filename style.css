@@ -395,9 +395,12 @@ u {
 .contact h2 {
   font-size: 1.5rem;
   padding: 1rem 1rem;
+  letter-spacing: 3px;
 }
 .contact p {
   font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2rem;
 }
 .contact i {
   color: #f69c08;
@@ -411,6 +414,7 @@ u {
 }
 .social-links h2 {
   font-size: 1.5rem;
+  letter-spacing: 3px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
