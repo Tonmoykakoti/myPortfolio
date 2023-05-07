@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar">
             <div class="nav-center">
                 <div class="nav-header">
@@ -21,10 +21,10 @@
                     <button type="button" class="btn nav-btn"><i class="fa-solid fa-bars"></i></button>
                 </div>
                 <div class="nav-links">
-                    <a href="index.html" class="nav-link">home</a>
+                    <a href="#home" class="nav-link">home</a>
                     <a href="#about" class="nav-link">about me</a>
                     <a href="#projects" class="nav-link">projects</a>
-                    <a href="index.html" class="nav-link">connect</a>
+                    <a href="#footer" class="nav-link">connect</a>
                 </div>
             </div>
             <!-- nav -->
@@ -66,14 +66,52 @@
     <!-- end of about page -->
     <!-- projects -->
     <section class="projects" id="projects">
-
+        <h1>project<span>s</span></h1>
+        <div class="projects-container">
+            <a href="https://backroadduliajan.netlify.app" class="projects-images">
+                <img src="./images/imgs/backroad.jpg" alt="backroad" class="img photos ">
+                <p>non dynamic site using react</p>
+            </a>
+            <a href="https://modahi.netlify.app" class="projects-images">
+                <img src="./images/imgs/cocktails.jpg" alt="backroad" class="img photos ">
+                <p> fetching API data using react </p>
+            </a>
+            <a href="https://comfyland.netlify.app" class="projects-images">
+                <img src="./images/imgs/comfy.jpg" alt="backroad" class="img photos ">
+                <p>e-commerce site</p>
+            </a>
+            <a href="https://apetite.netlify.app" class="projects-images">
+                <img src="./images/imgs/recipes.jpg" alt="backroad" class="img photos ">
+                <p>html/css demo project</p>
+            </a>
+            <a href="https://striper.netlify.app" class="projects-images">
+                <img src="./images/imgs/stripe.jpg" alt="backroad" class="img photos ">
+                <p>fancy submenu using react</p>
+            </a>
+            <a href="https://tksteel.netlify.app" class="projects-images">
+                <img src="./images/imgs/tksteel.jpg" alt="backroad" class="img photos ">
+                <p>our shop</p>
+            </a>
+        </div>
     </section>
     <!--end of projects -->
 
     <!-- footer -->
-    <footer class="page-footer">
-        <p>&copy; <span id="date"></span></p>
-        <span class="footer-logo">Thank you!!!</span>
+    <footer class="page-footer" id="footer">
+        <!-- <p>&copy; <span id="date"></span></p>
+        <span class="footer-logo">Thank you!!!</span> -->
+        <div class="contact">
+            <h2>contac<span>t</span></h2>
+            <p><i class="fa-solid fa-phone"></i>9859320449/7002362410</p>
+            <p><i class="fa-solid fa-envelope"></i>kakotitonmoy@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>Near puhari motors, krishna nagar, pin-786602</p>
+        </div>
+        <div class="social-links">
+            <h2>socia<span>l</span></h2>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
     </footer>
     <!-- end of footer -->
     <script src="app.js"></script>
