@@ -103,20 +103,19 @@ u {
   width: 90vw;
   margin: 0 auto;
   min-height: 100vh;
-  position: relative;
 }
 .content {
   width: 90vw;
-  height: 30vh;
-  position: absolute;
-  top: 7rem;
+  padding-top: 4.5rem;
   text-align: center;
   /* border: 2px solid red; */
 }
 .content h1 {
   font-size: 4rem;
+  padding-top: 2rem;
   letter-spacing: 2px;
-  color: #222;
+  color: #fff;
+  text-shadow: 0px 0px 8px #222;
 }
 .content p {
   text-transform: capitalize;
@@ -140,10 +139,7 @@ u {
   color: #222;
 }
 .image-container {
-  position: absolute;
-  top: 25rem;
   width: 90vw;
-  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,9 +150,6 @@ u {
 }
 
 @media screen and (min-width: 576px) {
-  .content {
-    top: 8rem;
-  }
   .content h1 {
     font-size: 5rem;
   }
@@ -164,7 +157,7 @@ u {
     margin-bottom: 1.5rem;
   }
   .image-container .user-img {
-    width: 40%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -200,17 +193,24 @@ u {
   .nav-link:nth-of-type(4) {
     border-bottom: none;
   }
+  .page {
+    grid-template-columns: 1fr 1fr;
+  }
   .content {
     width: 40vw;
-    min-height: calc(90vh - (5rem+4rem));
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    top: 4rem;
   }
   .content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 3px;
+    color: #222;
+    text-shadow: none;
   }
   .name {
     color: #f69c08;
@@ -226,13 +226,14 @@ u {
     letter-spacing: 4px;
   }
   .image-container {
-    top: 8rem;
-    right: 0;
-    width: 40vw;
-    min-height: calc(90vh - (5rem+4rem));
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    top: 15rem;
+    /* overflow: hidden; */
   }
   .image-container .user-img {
-    width: 70%;
+    width: 50%;
     transition: var(--transition);
   }
   .image-container .user-img:hover {
@@ -252,7 +253,7 @@ u {
   width: 90vw;
   margin: 0 auto;
   padding-top: 4rem;
-  min-height: calc(100vh - (5rem + 4rem));
+  min-height: 100vh;
   /* border: 1px solid blue; */
 }
 .about-section {
@@ -304,6 +305,9 @@ u {
   }
 }
 @media screen and (min-width: 992px) {
+  .about-page {
+    padding-top: 5rem;
+  }
   .about-section h1 {
     margin-bottom: 3rem;
   }
@@ -326,6 +330,13 @@ u {
   .fa-react:hover {
     transform: scale(2);
   }
+}
+/* projects */
+.projects {
+  width: 90vw;
+  margin: 0 auto;
+  border: 2px solid blue;
+  min-height: 100vh;
 }
 /* page footer */
 .page-footer {
