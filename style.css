@@ -15,16 +15,17 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  background: #f69c08;
+  /* background: #f69c08; */
+  background: url("./images/portfolio-BG.jpg") center/cover no-repeat;
 }
 .name {
-  color: #fff;
+  color: #f69c08;
 }
 .hash {
-  color: #fff;
+  color: #f69c08;
 }
 u {
-  color: #fff;
+  color: #f69c08;
 }
 .btn {
   padding: 0.5rem 0.75rem;
@@ -96,6 +97,9 @@ u {
 .nav-link:nth-of-type(4) {
   border-bottom: 1px solid #f69c08;
 }
+.nav-link:hover {
+  color: #f69c08;
+}
 
 .page {
   display: grid;
@@ -113,7 +117,7 @@ u {
   font-size: 4rem;
   padding-top: 2rem;
   letter-spacing: 2px;
-  color: #fff;
+  color: #222;
 }
 .content p {
   text-transform: capitalize;
@@ -124,30 +128,30 @@ u {
 }
 .link-btn {
   padding: 0.8rem 2rem;
-  border: 2px solid #fff;
+  border: 2px solid #f69c08;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 4px;
-  color: #fff;
+  color: #f69c08;
   background: transparent;
   transition: var(--transition);
 }
 .link-btn:hover {
-  background: #fff;
-  color: #222;
+  background: #f69c08;
+  color: #fff;
 }
 .image-container {
   width: 90vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 3.5rem;
   margin-top: 3rem;
   margin-bottom: 4rem;
   /* border: 2px solid blue; */
 }
 .image-container .user-img {
-  width: 65%;
+  width: 60%;
 }
 
 @media screen and (min-width: 576px) {
@@ -262,8 +266,10 @@ u {
   text-transform: capitalize;
 }
 .about-section h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .about-section p {
   font-size: 1.2rem;
@@ -274,7 +280,7 @@ u {
   font-size: 2rem;
 }
 .fa-brands {
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 }
 .fa-html5 {
   color: #e34c26;
@@ -307,6 +313,7 @@ u {
 @media screen and (min-width: 992px) {
   .about-page {
     padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .about-section h1 {
     margin-bottom: 3rem;
@@ -339,9 +346,10 @@ u {
 }
 .projects h1 {
   padding-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
-  text-transform: capitalize;
-  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 .projects-container {
   display: grid;
@@ -381,10 +389,11 @@ u {
 }
 /* page footer */
 .page-footer {
-  height: 20rem;
+  height: 23rem;
   background: #222;
   color: #fff;
 }
+
 .contact {
   margin: 2rem auto;
   width: 90vw;
@@ -421,4 +430,13 @@ u {
   color: #f69c08;
   margin-right: 2rem;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .page-footer {
+    margin-top: 3rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
