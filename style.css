@@ -142,7 +142,7 @@ u {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 4rem;
   /* border: 2px solid blue; */
 }
@@ -255,8 +255,6 @@ u {
   width: 90vw;
   margin: 0 auto;
   padding-top: 4rem;
-  min-height: 100vh;
-  /* border: 1px solid blue; */
 }
 .about-section {
   padding: 1.5rem 3rem;
@@ -337,7 +335,6 @@ u {
 .projects {
   width: 90vw;
   margin: 0 auto;
-  min-height: 100vh;
   text-align: center;
 }
 .projects h1 {
