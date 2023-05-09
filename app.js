@@ -14,6 +14,11 @@ navBtnDOM.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
 
-const date = getElement("#date");
-const currentYear = new Date().getFullYear();
-date.textContent = currentYear;
+const bars = document.querySelector(".fa-bars");
+
+bars.addEventListener("click", function () {
+  if (bars.classList.contains("fa-bars")) {
+    bars.classList.toggle("fa-rotate-270");
+  } else {
+  }
+});

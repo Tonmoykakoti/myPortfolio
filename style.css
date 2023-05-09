@@ -7,9 +7,12 @@
 
 :root {
   --transition: 0.3s ease-in-out all;
+  --color-primary: #f69c08;
+  --color-secondary: #222;
+  --color-white: #fff;
 }
 span {
-  color: #f69c08;
+  color: var(--color-primary);
 }
 html {
   scroll-behavior: smooth;
@@ -19,14 +22,20 @@ header {
   background: url("./images/portfolio-BG.jpg") center/cover no-repeat;
 }
 .name {
-  color: #f69c08;
+  color: var(--color-primary);
 }
 .hash {
-  color: #f69c08;
+  color: var(--color-primary);
 }
 u {
-  color: #f69c08;
+  color: var(--color-primary);
 }
+.fa-bars {
+  transition: var(--transition);
+}
+/* .fa-rotate {
+  transform: rotate(90deg);
+} */
 .btn {
   padding: 0.5rem 0.75rem;
   border-radius: 0.3rem;
@@ -49,7 +58,7 @@ u {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
-  background: #fff;
+  background: var(--color-white);
   z-index: 900;
   position: fixed;
   left: 0;
@@ -70,7 +79,7 @@ u {
   align-items: center;
 }
 .nav-btn i {
-  color: #f69c08;
+  color: var(--color-primary);
   font-size: 2rem;
 }
 .nav-links {
@@ -90,15 +99,15 @@ u {
   text-align: center;
   text-transform: uppercase;
   padding: 1rem 0;
-  color: #222;
+  color: var(--color-secondary);
   font-weight: 500;
-  border-top: 1px solid #f69c08;
+  border-top: 1px solid var(--color-primary);
 }
 .nav-link:nth-of-type(4) {
-  border-bottom: 1px solid #f69c08;
+  border-bottom: 1px solid var(--color-primary);
 }
 .nav-link:hover {
-  color: #f69c08;
+  color: var(--color-primary);
 }
 
 .page {
@@ -117,28 +126,28 @@ u {
   font-size: 3rem;
   padding-top: 1rem;
   letter-spacing: 2px;
-  color: #222;
+  color: var(--color-secondary);
 }
 .content p {
   text-transform: capitalize;
   font-size: 1rem;
   letter-spacing: 2px;
   margin-bottom: 2rem;
-  color: #222;
+  color: var(--color-secondary);
 }
 .link-btn {
   padding: 0.8rem 2rem;
-  border: 2px solid #f69c08;
+  border: 2px solid var(--color-primary);
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 4px;
-  color: #f69c08;
+  color: var(--color-primary);
   background: transparent;
   transition: var(--transition);
 }
 .link-btn:hover {
-  background: #f69c08;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 .image-container {
   width: 90vw;
@@ -215,18 +224,18 @@ u {
   .content h1 {
     font-size: 5rem;
     letter-spacing: 3px;
-    color: #222;
+    color: var(--color-secondary);
     text-shadow: none;
   }
   .name {
-    color: #f69c08;
+    color: var(--color-primary);
     font-weight: 600;
   }
   .hash {
-    color: #f69c08;
+    color: var(--color-primary);
   }
   u {
-    color: #f69c08;
+    color: var(--color-primary);
   }
   .content p {
     letter-spacing: 4px;
@@ -246,12 +255,12 @@ u {
     transform: scale(1.1);
   }
   .link-btn {
-    border: 2px solid #f69c08;
-    color: #222;
+    border: 2px solid var(--color-primary);
+    color: var(--color-secondary);
   }
   .link-btn:hover {
-    background: #f69c08;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-white);
   }
 }
 
@@ -356,7 +365,7 @@ u {
   grid-gap: 2rem;
 }
 .projects-images {
-  box-shadow: 0px 0px 10px #222;
+  box-shadow: 0px 0px 10px var(--color-secondary);
   transition: var(--transition);
 }
 .projects-images:hover {
@@ -366,7 +375,7 @@ u {
   text-decoration: none;
   cursor: pointer;
   text-transform: capitalize;
-  color: #222;
+  color: var(--color-secondary);
 }
 .projects-container p {
   margin: 1rem 1rem;
@@ -390,8 +399,8 @@ u {
 /* page footer */
 .page-footer {
   height: 23rem;
-  background: #222;
-  color: #fff;
+  background: var(--color-secondary);
+  color: var(--color-white);
 }
 
 .contact {
@@ -411,7 +420,7 @@ u {
   line-height: 2rem;
 }
 .contact i {
-  color: #f69c08;
+  color: var(--color-primary);
   margin-right: 1rem;
 }
 .social-links {
@@ -427,7 +436,7 @@ u {
   padding-bottom: 1rem;
 }
 .social-links i {
-  color: #f69c08;
+  color: var(--color-primary);
   margin-right: 2rem;
   font-size: 1.5rem;
 }
